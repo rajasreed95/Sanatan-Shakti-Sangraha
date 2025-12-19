@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Sanskrit Quote */}
           <div className="mb-8 animate-fade-in">
             <p className="text-3xl md:text-5xl font-bold text-saffron-700 mb-2">
-              {foundationInfo.tagline}
+              || {foundationInfo.tagline} ||
             </p>
             <p className="text-lg md:text-xl text-saffron-600 italic mb-1">
               {foundationInfo.taglineEnglish}
