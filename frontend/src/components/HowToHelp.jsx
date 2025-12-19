@@ -40,23 +40,15 @@ const HowToHelp = () => {
         {/* Help Options */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Donate Card */}
-          <Card className="overflow-hidden border-2 border-saffron-200 hover:border-saffron-400 transition-all hover:shadow-2xl">
-            <div className="relative h-64">
-              <img 
-                src={images.donate} 
-                alt="Donate" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-saffron-900/80 to-transparent" />
-              <div className="absolute bottom-6 left-6">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3">
-                  <Heart className="w-8 h-8 text-saffron-600" />
+          <Card className="border-2 border-saffron-200 hover:border-saffron-400 transition-all hover:shadow-2xl bg-gradient-to-br from-white to-saffron-50">
+            <div className="p-8">
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-saffron-100 rounded-full flex items-center justify-center">
+                  <Heart className="w-10 h-10 text-saffron-600" />
                 </div>
               </div>
-            </div>
-            <div className="p-8">
-              <h3 className="text-2xl font-bold text-saffron-800 mb-4">{howToHelp.donate.title}</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <h3 className="text-2xl font-bold text-saffron-800 mb-4 text-center">{howToHelp.donate.title}</h3>
+              <p className="text-gray-700 mb-6 leading-relaxed text-center">
                 {howToHelp.donate.description}
               </p>
               <Button 
@@ -70,23 +62,15 @@ const HowToHelp = () => {
           </Card>
 
           {/* Volunteer Card */}
-          <Card className="overflow-hidden border-2 border-amber-200 hover:border-amber-400 transition-all hover:shadow-2xl">
-            <div className="relative h-64">
-              <img 
-                src={images.volunteer} 
-                alt="Volunteer" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-amber-900/80 to-transparent" />
-              <div className="absolute bottom-6 left-6">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3">
-                  <Users className="w-8 h-8 text-amber-600" />
+          <Card className="border-2 border-amber-200 hover:border-amber-400 transition-all hover:shadow-2xl bg-gradient-to-br from-white to-amber-50">
+            <div className="p-8">
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center">
+                  <Users className="w-10 h-10 text-amber-600" />
                 </div>
               </div>
-            </div>
-            <div className="p-8">
-              <h3 className="text-2xl font-bold text-saffron-800 mb-4">{howToHelp.volunteer.title}</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <h3 className="text-2xl font-bold text-saffron-800 mb-4 text-center">{howToHelp.volunteer.title}</h3>
+              <p className="text-gray-700 mb-6 leading-relaxed text-center">
                 {howToHelp.volunteer.description}
               </p>
               <Button 
