@@ -38,15 +38,17 @@ const Vision = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          {/* Image */}
+          {/* Video */}
           <div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={images.vision} 
-                alt="Vision for education" 
+              <video 
+                src={videos.vision[0]} 
+                controls
                 className="w-full h-[400px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-saffron-900/50 to-transparent" />
+                preload="metadata"
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
 
