@@ -42,9 +42,9 @@ const Vision = () => {
           <div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <video 
-                src={videos.vision[0]} 
+                src={videos.vision} 
                 controls
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[450px] object-cover"
                 preload="metadata"
               >
                 Your browser does not support the video tag.
