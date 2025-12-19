@@ -20,16 +20,20 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          {/* Image */}
-          <div className="order-2 md:order-1">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={images.about} 
-                alt="Child learning" 
-                className="w-full h-[400px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-saffron-900/50 to-transparent" />
-            </div>
+          {/* Videos */}
+          <div className="order-2 md:order-1 space-y-6">
+            {videos.about.map((videoUrl, index) => (
+              <div key={index} className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video 
+                  src={videoUrl} 
+                  controls
+                  className="w-full h-[300px] object-cover"
+                  preload="metadata"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            ))}
           </div>
 
           {/* Content */}
