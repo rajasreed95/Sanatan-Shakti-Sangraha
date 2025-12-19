@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from './ui/card';
-import { aboutContent, images } from '../mock';
+import { aboutContent, images, videos } from '../mock';
 import { BookHeart, Users, Sparkles } from 'lucide-react';
 
 const About = () => {
