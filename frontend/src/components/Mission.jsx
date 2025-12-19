@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from './ui/card';
-import { missionContent, images } from '../mock';
+import { missionContent, images, videos } from '../mock';
 import { Target, GraduationCap, Heart, Lightbulb } from 'lucide-react';
 
 const Mission = () => {
