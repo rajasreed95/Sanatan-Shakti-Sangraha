@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from './ui/card';
-import { visionContent, images } from '../mock';
+import { visionContent, images, videos } from '../mock';
 import { Globe, BookOpen, TrendingUp } from 'lucide-react';
 
 const Vision = () => {
