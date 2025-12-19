@@ -52,16 +52,20 @@ const Mission = () => {
             ))}
           </div>
 
-          {/* Image */}
-          <div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={images.mission} 
-                alt="Students learning" 
-                className="w-full h-[400px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-saffron-900/50 to-transparent" />
-            </div>
+          {/* Videos */}
+          <div className="space-y-6">
+            {videos.mission.map((videoUrl, index) => (
+              <div key={index} className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video 
+                  src={videoUrl} 
+                  controls
+                  className="w-full h-[300px] object-cover"
+                  preload="metadata"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            ))}
           </div>
         </div>
 
