@@ -83,31 +83,16 @@ export const contactInfo = {
 };
 
 export const images = {
-  hero: 'https://images.pexels.com/photos/20556421/pexels-photo-20556421.jpeg',
-  about: 'https://images.unsplash.com/flagged/photo-1551887373-6edba6dacbb1',
-  mission: 'https://images.pexels.com/photos/1516440/pexels-photo-1516440.jpeg',
-  vision: 'https://images.pexels.com/photos/6935996/pexels-photo-6935996.jpeg',
+  about: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/6kb1997c_about_photo.JPG',
+  mission: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/u0sv153k_Mission_photo_1.JPG',
   volunteer: 'https://images.pexels.com/photos/5303547/pexels-photo-5303547.jpeg',
-  donate: 'https://images.pexels.com/photos/159632/school-children-happy-food-159632.jpeg',
-  gallery: [
-    'https://images.pexels.com/photos/5303549/pexels-photo-5303549.jpeg',
-    'https://images.unsplash.com/photo-1588072432836-e10032774350',
-    'https://images.pexels.com/photos/20556421/pexels-photo-20556421.jpeg'
-  ]
+  donate: 'https://images.pexels.com/photos/159632/school-children-happy-food-159632.jpeg'
 };
 
 export const videos = {
-  about: [
-    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/bq0g107x_SnapInsta.to_AQMjrSf7wnnqrp7ddpRnyaVXbJkSu3cGrbGdFL86jY44XAFZnPc90vojg_z4-MOZWDTjHBUIqVgWepAZExyB0iLPb5HNFSKIJ80UTJw.MP4',
-    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/h4uh74yq_SnapInsta.to_AQNBdrjrytKNhsII5CUTDwhtxg9KEY2AiT8DSITHTJI7lFLDLUY-IfWNnP41xDxw2dJvfFGo-IX_NHKOM3tgIUl89kFcUGR5ti4Ii9A.MP4'
-  ],
-  mission: [
-    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/nglbuzu4_SnapInsta.to_AQNowptuX3KyM2wL076Y3subAH2xEEF_9DUxDJzI8mcvwGiHyAVUGARlW-WcIxaSv911eGo_oy2Zga5Y9lveErvOQLWoMPC-jLt06go.MP4',
-    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/gxgjpbv2_SnapInsta.to_AQMziB8l3GZGir1uHoN9gxFcEAi8PrgEDSlAUrqkzjsAchQNhPs5HAyxzJpcP8FUiswYy-eWe5mGqR7P83Dxlg6nqvfDP7FMY7l8edo.MP4'
-  ],
-  vision: [
-    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/oi6u78yu_SnapInsta.to_AQOTke4PLXprk-QEFNFaeRxv6lpPXB3dl4E0OSlChpno35SqlK0rrucJNwVZxgxu3P-idIJoLPUoNWH6GuvGQjwt_fZ9f0EXRQiBaC0.MP4'
-  ]
+  about: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/0g7ud6hq_About_1.MP4',
+  mission: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/iv01d8c1_Mission_1.MP4',
+  vision: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/19s11hwp_Vision_2.MP4'
 };
 
 export const stats = [
