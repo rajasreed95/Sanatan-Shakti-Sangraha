@@ -96,6 +96,20 @@ export const images = {
   ]
 };
 
+export const videos = {
+  about: [
+    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/bq0g107x_SnapInsta.to_AQMjrSf7wnnqrp7ddpRnyaVXbJkSu3cGrbGdFL86jY44XAFZnPc90vojg_z4-MOZWDTjHBUIqVgWepAZExyB0iLPb5HNFSKIJ80UTJw.MP4',
+    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/h4uh74yq_SnapInsta.to_AQNBdrjrytKNhsII5CUTDwhtxg9KEY2AiT8DSITHTJI7lFLDLUY-IfWNnP41xDxw2dJvfFGo-IX_NHKOM3tgIUl89kFcUGR5ti4Ii9A.MP4'
+  ],
+  mission: [
+    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/nglbuzu4_SnapInsta.to_AQNowptuX3KyM2wL076Y3subAH2xEEF_9DUxDJzI8mcvwGiHyAVUGARlW-WcIxaSv911eGo_oy2Zga5Y9lveErvOQLWoMPC-jLt06go.MP4',
+    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/gxgjpbv2_SnapInsta.to_AQMziB8l3GZGir1uHoN9gxFcEAi8PrgEDSlAUrqkzjsAchQNhPs5HAyxzJpcP8FUiswYy-eWe5mGqR7P83Dxlg6nqvfDP7FMY7l8edo.MP4'
+  ],
+  vision: [
+    'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/oi6u78yu_SnapInsta.to_AQOTke4PLXprk-QEFNFaeRxv6lpPXB3dl4E0OSlChpno35SqlK0rrucJNwVZxgxu3P-idIJoLPUoNWH6GuvGQjwt_fZ9f0EXRQiBaC0.MP4'
+  ]
+};
+
 export const stats = [
   { number: '500+', label: 'Children Educated' },
   { number: '50+', label: 'Dedicated Volunteers' },
