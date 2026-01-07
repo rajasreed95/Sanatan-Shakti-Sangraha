@@ -57,13 +57,12 @@ const Mission = () => {
             {/* Video */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <video 
-                src={videos.mission} 
                 controls
                 className="w-full h-[350px] object-cover"
                 preload="metadata"
                 playsInline
-                controlsList="nodownload"
               >
+                <source src={videos.mission} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
