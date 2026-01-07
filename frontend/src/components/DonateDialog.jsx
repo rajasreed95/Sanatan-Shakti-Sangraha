@@ -10,7 +10,7 @@ const DonateDialog = ({ open, onOpenChange }) => {
   const [copiedField, setCopiedField] = useState('');
 
   // Reset to main options when dialog opens
-  React.useEffect(() => {
+  useEffect(() => {
     if (open) {
       setSelectedOption(null);
     }
