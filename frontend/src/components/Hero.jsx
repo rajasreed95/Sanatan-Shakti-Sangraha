@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
 
           {/* Foundation Name with Logo */}
-          <div className="mb-8 animate-fade-in-delay flex items-center justify-center gap-12 max-w-6xl mx-auto">
+          <div className="mb-8 animate-fade-in-delay flex items-center justify-center max-w-6xl mx-auto" style={{ marginLeft: '-5rem' }}>
             <div className="flex-shrink-0">
               <img 
                 src={foundationInfo.logoSmall} 
