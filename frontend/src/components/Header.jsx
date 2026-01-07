@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo and Foundation Name */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <img 
               src={foundationInfo.logo} 
               alt="Sanatan Shakti Sangrah Logo" 
