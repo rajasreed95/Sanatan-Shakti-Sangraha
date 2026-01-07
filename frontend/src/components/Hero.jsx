@@ -40,18 +40,20 @@ const Hero = () => {
           </div>
 
           {/* Foundation Name with Logo */}
-          <div className="mb-8 animate-fade-in-delay flex flex-col items-center">
+          <div className="mb-8 animate-fade-in-delay flex items-center justify-center gap-6">
             <img 
               src={foundationInfo.logo} 
               alt="Sanatan Shakti Sangrah Logo" 
-              className="h-32 md:h-40 w-auto object-contain mb-6"
+              className="h-24 md:h-32 w-auto object-contain"
             />
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-saffron-800 mb-4">
-              {foundationInfo.name}
-            </h1>
-            <h2 className="text-2xl md:text-3xl text-saffron-600 mb-6">
-              {foundationInfo.nameEnglish}
-            </h2>
+            <div className="flex flex-col">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-saffron-800 mb-2">
+                {foundationInfo.name}
+              </h1>
+              <h2 className="text-2xl md:text-3xl text-saffron-600">
+                {foundationInfo.nameEnglish}
+              </h2>
+            </div>
           </div>
 
           {/* Mission Statement */}
