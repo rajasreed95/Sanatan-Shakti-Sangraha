@@ -9,6 +9,13 @@ const DonateDialog = ({ open, onOpenChange }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [copiedField, setCopiedField] = useState('');
 
+  // Reset to main options when dialog opens
+  React.useEffect(() => {
+    if (open) {
+      setSelectedOption(null);
+    }
+  }, [open]);
+
   const copyToClipboard = (text, field) => {
     navigator.clipboard.writeText(text);
     setCopiedField(field);
