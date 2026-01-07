@@ -7,7 +7,8 @@ export const foundationInfo = {
   taglineEnglish: 'Tamaso mā jyotirgamaya',
   taglineTranslation: 'From darkness, lead me to light',
   taglineSource: 'Brhadāraṇyaka Upaniṣad 1.3.28',
-  instagram: 'https://www.instagram.com/sanatanshaktisangrah?igsh=cWpwMnF0MnZldDln'
+  instagram: 'https://www.instagram.com/sanatanshaktisangrah?igsh=cWpwMnF0MnZldDln',
+  logo: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/ywy13a7t_ChatGPT%20Image%20Jan%207%2C%202026%2C%2003_31_04%20PM.png'
 };
 
 export const aboutContent = {
