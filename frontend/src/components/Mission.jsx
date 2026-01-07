@@ -59,8 +59,9 @@ const Mission = () => {
               <video 
                 controls
                 className="w-full h-[350px] object-cover"
-                preload="metadata"
+                preload="auto"
                 playsInline
+                crossOrigin="anonymous"
               >
                 <source src={videos.mission} type="video/mp4" />
                 Your browser does not support the video tag.
