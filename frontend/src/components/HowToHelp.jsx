@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
-import { howToHelp, images } from '../mock';
+import { howToHelp } from '../mock';
 import { Heart, Users, ArrowRight } from 'lucide-react';
-import { useToast } from '../hooks/use-toast';
+import VolunteerDialog from './VolunteerDialog';
+import DonateDialog from './DonateDialog';
 
 const HowToHelp = () => {
   const { toast } = useToast();
