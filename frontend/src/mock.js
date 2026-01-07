@@ -94,9 +94,8 @@ export const howToHelp = {
 export const contactInfo = {
   title: 'Contact Us',
   address: 'Rishikesh, Uttarakhand, India',
-  email: 'info@sanatanshakti.org',
-  phone: '+91 XXXX XXXXXX',
-  note: 'Contact details coming soon'
+  email: 'sanatanshaktisangrah@gmail.com',
+  phones: ['+91 9999279843', '+91 9873889503']
 };
 
 export const images = {
