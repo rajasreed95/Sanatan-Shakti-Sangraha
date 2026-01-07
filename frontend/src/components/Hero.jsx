@@ -39,8 +39,13 @@ const Hero = () => {
             <p className="text-sm text-gray-600 mt-2">— {foundationInfo.taglineSource}</p>
           </div>
 
-          {/* Foundation Name */}
-          <div className="mb-8 animate-fade-in-delay">
+          {/* Foundation Name with Logo */}
+          <div className="mb-8 animate-fade-in-delay flex flex-col items-center">
+            <img 
+              src={foundationInfo.logo} 
+              alt="Sanatan Shakti Sangrah Logo" 
+              className="h-32 md:h-40 w-auto object-contain mb-6"
+            />
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-saffron-800 mb-4">
               {foundationInfo.name}
             </h1>
