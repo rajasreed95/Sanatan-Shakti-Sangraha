@@ -2,11 +2,12 @@
 
 export const foundationInfo = {
   name: 'सनातन शक्ति संग्रह',
-  nameEnglish: 'Sanatan Shakti Sangraha',
+  nameEnglish: 'Sanatan Shakti Sangrah',
   tagline: 'तमसो मा ज्योतिर्गमय',
   taglineEnglish: 'Tamaso mā jyotirgamaya',
   taglineTranslation: 'From darkness, lead me to light',
-  taglineSource: 'Brhadāraṇyaka Upaniṣad 1.3.28'
+  taglineSource: 'Brhadāraṇyaka Upaniṣad 1.3.28',
+  instagram: 'https://www.instagram.com/sanatanshaktisangrah?igsh=cWpwMnF0MnZldDln'
 };
 
 export const aboutContent = {
