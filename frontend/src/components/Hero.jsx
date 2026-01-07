@@ -85,22 +85,6 @@ const Hero = () => {
               Learn More
             </Button>
           </div>
-
-          {/* Decorative Element */}
-          <div className="flex justify-center items-center gap-4 text-saffron-400">
-            <div className="h-px w-16 bg-saffron-300" />
-            <div className="w-2 h-2 rounded-full bg-saffron-400" />
-            <div className="w-3 h-3 rounded-full bg-saffron-500" />
-            <div className="w-2 h-2 rounded-full bg-saffron-400" />
-            <div className="h-px w-16 bg-saffron-300" />
-          </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-saffron-400 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-saffron-500 rounded-full" />
         </div>
       </div>
     </section>
