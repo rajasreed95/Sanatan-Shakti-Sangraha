@@ -7,20 +7,15 @@ import VolunteerDialog from './VolunteerDialog';
 import DonateDialog from './DonateDialog';
 
 const HowToHelp = () => {
-  const { toast } = useToast();
+  const [volunteerDialogOpen, setVolunteerDialogOpen] = useState(false);
+  const [donateDialogOpen, setDonateDialogOpen] = useState(false);
 
   const handleDonate = () => {
-    toast({
-      title: "Thank you for your interest!",
-      description: "Donation system coming soon. Your contribution will make a real difference.",
-    });
+    setDonateDialogOpen(true);
   };
 
   const handleVolunteer = () => {
-    toast({
-      title: "Thank you for your interest!",
-      description: "Volunteer registration system coming soon. We look forward to having you join us.",
-    });
+    setVolunteerDialogOpen(true);
   };
 
   return (
