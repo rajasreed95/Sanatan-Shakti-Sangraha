@@ -7,12 +7,12 @@ import { donationInfo } from '../mock';
 
 const DonateDialog = ({ open, onOpenChange }) => {
   const [selectedOption, setSelectedOption] = useState(null);
-  const [copiedUPI, setCopiedUPI] = useState(false);
+  const [copiedField, setCopiedField] = useState('');
 
-  const copyToClipboard = (text) => {
+  const copyToClipboard = (text, field) => {
     navigator.clipboard.writeText(text);
-    setCopiedUPI(true);
-    setTimeout(() => setCopiedUPI(false), 2000);
+    setCopiedField(field);
+    setTimeout(() => setCopiedField(''), 2000);
   };
 
   const handleBack = () => {
