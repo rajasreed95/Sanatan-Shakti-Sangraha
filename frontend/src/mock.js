@@ -26,17 +26,43 @@ Sanatan philosophy has dignified Vidya (knowledge) meant to awaken the inherent 
     title: 'Gurukul Parampara',
     sanskritVerse: 'गुरुर्ब्रह्मा गुरुर्विष्णुः गुरुर्देवो महेश्वरः। गुरुः साक्षात् परं ब्रह्म तस्मै श्रीगुरवे नमः',
     verseTransliteration: 'Gurur Brahmā gurur Viṣṇuḥ gurur devo Maheśvaraḥ | Guruḥ sākṣāt paraṃ Brahma tasmai śrī-gurave namaḥ',
-    verseTranslation: 'The Guru is Brahmā, the Guru is Viṣṇu, the Guru is Maheśvara; The Guru is verily the Supreme Brahman—salutations to that revered Guru.',
-    description: `We are rooted in the sacred Gurukul parampara—India's timeless ashram-based system of education—where students learn under the loving guidance of Gurus. This holistic approach nurtures body, mind, and soul, imparting academic knowledge alongside self-discipline, humility, moral values, and practical life skills through lived experience.
-
-Students live as part of a spiritual family, with essential needs like food, clothing and basic school supplies provided so they can fully focus on sadhana and learning.`,
-    activities: [
-      'Daily yoga',
-      'Meditation',
-      'Regular medical camps',
-      'Celebration of major festivals of Sanatan Dharma'
-    ],
-    conclusion: 'Through this journey, we aim to shape individuals of strong character, spiritual awareness, and moral integrity—self-reliant individuals who live by dharma and serve society with compassion and responsibility.'
+    verseSource: 'गुरुगीता',
+    verseTranslation: 'The Guru is Brahmā, the Guru is Viṣṇu, the Guru is Maheśvara; The Guru is verily the Supreme Brahman — salutations to that revered Guru.',
+    introText: 'We are rooted in the sacred **Gurukul Parampara** — India's timeless ashram-based system of education — where students **learn and grow** under the loving guidance of Gurus. This holistic approach nurtures **body, mind, and soul**, imparting academic knowledge alongside **character-building**, **self-discipline**, humility, moral values, and practical life skills gained through lived experience.',
+    education: {
+      title: 'Education in the Gurukul System',
+      description: 'Education follows the traditional **Gurukul method of study**, integrating spiritual wisdom with modern knowledge. Students receive structured learning in:',
+      subjects: [
+        'Sacred scriptures such as the **Bhagavad Gita** and the **Vedas**',
+        '**Mathematics and Science**, to develop logical thinking and scientific temper',
+        '**English**, to enable effective communication and engagement with the modern world'
+      ],
+      conclusion: 'This balanced curriculum ensures that students are spiritually grounded while being intellectually capable and practically prepared for life.'
+    },
+    ashramLife: {
+      title: 'Ashram Life & Daily Care',
+      description: 'Students live as part of an extended spiritual family within the ashram. All essential needs are thoughtfully provided, including:',
+      provisions: [
+        'Safe and disciplined **residential facilities**',
+        'Nutritious food and **clean drinking water**',
+        '**Clothing and basic daily necessities**',
+        '**Ration and essential supplies**, so students can focus fully on learning and sadhana'
+      ]
+    },
+    health: {
+      title: 'Health, Wellness & Discipline',
+      description: 'Physical and mental well-being are integral to ashram life. The daily routine includes:',
+      activities: [
+        '**Evening yoga and regular meditation**, promoting strength, flexibility, and inner balance',
+        '**Medical camps once every three months** for preventive health care',
+        '**Doctors available on a need basis**, ensuring timely medical attention whenever required'
+      ]
+    },
+    spiritual: {
+      title: 'Spiritual Culture & Festivals',
+      description: 'The ashram actively celebrates major **Sanatani (Sanatan Dharma) festivals and spiritual events**, allowing students to experience living traditions, understand cultural significance, and develop a deep connection with India's spiritual heritage and values.'
+    },
+    conclusion: 'Through this immersive Gurukul journey, we aim to shape individuals of **strong character, spiritual awareness, and moral integrity** — self-reliant individuals who live by **dharma** and serve society with compassion and responsibility.'
   }
 };
 
