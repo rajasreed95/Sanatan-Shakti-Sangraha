@@ -40,14 +40,19 @@ const Hero = () => {
           </div>
 
           {/* Foundation Name with Logo */}
-          <div className="mb-8 animate-fade-in-delay flex items-center justify-center gap-8 max-w-5xl mx-auto">
-            <img 
-              src={foundationInfo.logo} 
-              alt="Sanatan Shakti Sangrah Logo" 
-              className="h-24 md:h-32 w-auto object-contain"
-              style={{ mixBlendMode: 'multiply', filter: 'contrast(1.2)' }}
-            />
-            <div className="flex flex-col flex-1 text-center">
+          <div className="mb-8 animate-fade-in-delay flex items-center justify-center gap-12 max-w-6xl mx-auto">
+            <div className="flex-shrink-0">
+              <img 
+                src={foundationInfo.logo} 
+                alt="Sanatan Shakti Sangrah Logo" 
+                className="h-28 md:h-36 w-auto object-contain rounded-xl p-3"
+                style={{ 
+                  backgroundColor: '#fff7ed',
+                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)'
+                }}
+              />
+            </div>
+            <div className="flex flex-col text-left">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-saffron-800 mb-2">
                 {foundationInfo.name}
               </h1>
