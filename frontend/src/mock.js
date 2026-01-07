@@ -60,7 +60,7 @@ Sanatan philosophy has dignified Vidya (knowledge) meant to awaken the inherent 
     },
     spiritual: {
       title: 'Spiritual Culture & Festivals',
-      description: 'The ashram actively celebrates major **Sanatani (Sanatan Dharma) festivals and spiritual events**, allowing students to experience living traditions, understand cultural significance, and develop a deep connection with India's spiritual heritage and values.'
+      description: 'The ashram actively celebrates major **Sanatani (Sanatan Dharma) festivals and spiritual events**, allowing students to experience living traditions, understand cultural significance, and develop a deep connection with India\'s spiritual heritage and values.'
     },
     conclusion: 'Through this immersive Gurukul journey, we aim to shape individuals of **strong character, spiritual awareness, and moral integrity** - self-reliant individuals who live by **dharma** and serve society with compassion and responsibility.'
   }
