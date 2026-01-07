@@ -66,55 +66,131 @@ const About = () => {
               <p className="text-base text-saffron-500 italic mb-2">
                 {aboutContent.gurukulSection.verseTransliteration}
               </p>
+              <p className="text-sm text-gray-500 mb-2">— {aboutContent.gurukulSection.verseSource}</p>
               <p className="text-lg text-gray-600 italic leading-relaxed">
                 {aboutContent.gurukulSection.verseTranslation}
               </p>
             </div>
           </div>
 
-          <div className="space-y-8">
-            {aboutContent.gurukulSection.description.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="text-gray-700 leading-relaxed text-lg">
-                {paragraph.split('**').map((part, i) => {
-                  if (i % 2 === 1) {
-                    return <strong key={i} className="font-bold text-saffron-700">{part}</strong>;
-                  }
-                  return part.split('*').map((subpart, j) => {
-                    if (j % 2 === 1) {
-                      return <em key={j} className="italic">{subpart}</em>;
-                    }
-                    return subpart;
-                  });
-                })}
-              </p>
-            ))}
-
-            {/* Activities Section */}
-            <div className="bg-gradient-to-br from-saffron-50 to-amber-50 rounded-2xl p-8 my-8">
-              <h4 className="text-2xl font-bold text-saffron-800 mb-6 text-center">
-                Activities in the Ashram
-              </h4>
-              <div className="grid md:grid-cols-2 gap-4">
-                {aboutContent.gurukulSection.activities.map((activity, index) => (
-                  <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
-                    <div className="w-2 h-2 rounded-full bg-saffron-600 flex-shrink-0" />
-                    <span className="text-gray-700 font-medium text-lg">{activity}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
+          {/* Intro Text */}
+          <div className="mb-12">
             <p className="text-gray-700 leading-relaxed text-lg">
-              {aboutContent.gurukulSection.conclusion.split('**').map((part, i) => {
+              {aboutContent.gurukulSection.introText.split('**').map((part, i) => {
                 if (i % 2 === 1) {
                   return <strong key={i} className="font-bold text-saffron-700">{part}</strong>;
                 }
-                return part.split('*').map((subpart, j) => {
-                  if (j % 2 === 1) {
-                    return <em key={j} className="italic">{subpart}</em>;
-                  }
-                  return subpart;
-                });
+                return part;
+              })}
+            </p>
+          </div>
+
+          {/* Education Section */}
+          <div className="mb-12 bg-gradient-to-br from-saffron-50 to-amber-50 rounded-2xl p-8">
+            <h4 className="text-2xl font-bold text-saffron-800 mb-4">
+              {aboutContent.gurukulSection.education.title}
+            </h4>
+            <p className="text-gray-700 leading-relaxed text-lg mb-6">
+              {aboutContent.gurukulSection.education.description.split('**').map((part, i) => {
+                if (i % 2 === 1) {
+                  return <strong key={i} className="font-bold text-saffron-700">{part}</strong>;
+                }
+                return part;
+              })}
+            </p>
+            <ul className="space-y-3 mb-6">
+              {aboutContent.gurukulSection.education.subjects.map((subject, index) => (
+                <li key={index} className="flex items-start gap-3 text-gray-700 text-lg">
+                  <div className="w-2 h-2 rounded-full bg-saffron-600 mt-2 flex-shrink-0" />
+                  <span>
+                    {subject.split('**').map((part, i) => {
+                      if (i % 2 === 1) {
+                        return <strong key={i} className="font-bold text-saffron-700">{part}</strong>;
+                      }
+                      return part;
+                    })}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              {aboutContent.gurukulSection.education.conclusion}
+            </p>
+          </div>
+
+          {/* Ashram Life Section */}
+          <div className="mb-12">
+            <h4 className="text-2xl font-bold text-saffron-800 mb-4">
+              {aboutContent.gurukulSection.ashramLife.title}
+            </h4>
+            <p className="text-gray-700 leading-relaxed text-lg mb-6">
+              {aboutContent.gurukulSection.ashramLife.description}
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              {aboutContent.gurukulSection.ashramLife.provisions.map((provision, index) => (
+                <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border border-saffron-100">
+                  <div className="w-2 h-2 rounded-full bg-amber-600 mt-2 flex-shrink-0" />
+                  <span className="text-gray-700 text-lg">
+                    {provision.split('**').map((part, i) => {
+                      if (i % 2 === 1) {
+                        return <strong key={i} className="font-bold text-amber-700">{part}</strong>;
+                      }
+                      return part;
+                    })}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Health & Wellness Section */}
+          <div className="mb-12 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8">
+            <h4 className="text-2xl font-bold text-saffron-800 mb-4">
+              {aboutContent.gurukulSection.health.title}
+            </h4>
+            <p className="text-gray-700 leading-relaxed text-lg mb-6">
+              {aboutContent.gurukulSection.health.description}
+            </p>
+            <ul className="space-y-4">
+              {aboutContent.gurukulSection.health.activities.map((activity, index) => (
+                <li key={index} className="flex items-start gap-3 text-gray-700 text-lg">
+                  <div className="w-2 h-2 rounded-full bg-orange-600 mt-2 flex-shrink-0" />
+                  <span>
+                    {activity.split('**').map((part, i) => {
+                      if (i % 2 === 1) {
+                        return <strong key={i} className="font-bold text-orange-700">{part}</strong>;
+                      }
+                      return part;
+                    })}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Spiritual Culture Section */}
+          <div className="mb-12">
+            <h4 className="text-2xl font-bold text-saffron-800 mb-4">
+              {aboutContent.gurukulSection.spiritual.title}
+            </h4>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              {aboutContent.gurukulSection.spiritual.description.split('**').map((part, i) => {
+                if (i % 2 === 1) {
+                  return <strong key={i} className="font-bold text-saffron-700">{part}</strong>;
+                }
+                return part;
+              })}
+            </p>
+          </div>
+
+          {/* Conclusion */}
+          <div className="text-center bg-gradient-to-br from-saffron-100 to-amber-100 rounded-2xl p-8">
+            <p className="text-gray-800 leading-relaxed text-xl font-medium">
+              {aboutContent.gurukulSection.conclusion.split('**').map((part, i) => {
+                if (i % 2 === 1) {
+                  return <strong key={i} className="font-bold text-saffron-800">{part}</strong>;
+                }
+                return part;
               })}
             </p>
           </div>
