@@ -24,6 +24,7 @@ const Header = () => {
               src={foundationInfo.logo} 
               alt="Sanatan Shakti Sangrah Logo" 
               className="h-14 w-auto object-contain"
+              style={{ mixBlendMode: 'multiply', filter: 'contrast(1.2)' }}
             />
             <div className="flex flex-col">
               <h1 className="text-xl md:text-2xl font-bold text-saffron-700">{foundationInfo.name}</h1>
