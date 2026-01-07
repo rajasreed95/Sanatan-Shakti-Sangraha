@@ -9,6 +9,7 @@ import Vision from "./components/Vision";
 import Founders from "./components/Founders";
 import HowToHelp from "./components/HowToHelp";
 import Footer from "./components/Footer";
+import AdminPage from "./components/AdminPage";
 import { Toaster } from "./components/ui/sonner";
 
 const Home = () => {
@@ -32,6 +33,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster />
