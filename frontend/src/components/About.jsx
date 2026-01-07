@@ -53,6 +53,73 @@ const About = () => {
           </div>
         </div>
 
+        {/* Gurukul Parampara Section */}
+        <div className="mt-20 max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold text-saffron-800 mb-6">
+              {aboutContent.gurukulSection.title}
+            </h3>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-saffron-600 font-semibold mb-2 leading-relaxed">
+                {aboutContent.gurukulSection.sanskritVerse}
+              </p>
+              <p className="text-base text-saffron-500 italic mb-2">
+                {aboutContent.gurukulSection.verseTransliteration}
+              </p>
+              <p className="text-lg text-gray-600 italic leading-relaxed">
+                {aboutContent.gurukulSection.verseTranslation}
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-8">
+            {aboutContent.gurukulSection.description.split('\n\n').map((paragraph, index) => (
+              <p key={index} className="text-gray-700 leading-relaxed text-lg">
+                {paragraph.split('**').map((part, i) => {
+                  if (i % 2 === 1) {
+                    return <strong key={i} className="font-bold text-saffron-700">{part}</strong>;
+                  }
+                  return part.split('*').map((subpart, j) => {
+                    if (j % 2 === 1) {
+                      return <em key={j} className="italic">{subpart}</em>;
+                    }
+                    return subpart;
+                  });
+                })}
+              </p>
+            ))}
+
+            {/* Activities Section */}
+            <div className="bg-gradient-to-br from-saffron-50 to-amber-50 rounded-2xl p-8 my-8">
+              <h4 className="text-2xl font-bold text-saffron-800 mb-6 text-center">
+                Activities in the Ashram
+              </h4>
+              <div className="grid md:grid-cols-2 gap-4">
+                {aboutContent.gurukulSection.activities.map((activity, index) => (
+                  <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                    <div className="w-2 h-2 rounded-full bg-saffron-600 flex-shrink-0" />
+                    <span className="text-gray-700 font-medium text-lg">{activity}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <p className="text-gray-700 leading-relaxed text-lg">
+              {aboutContent.gurukulSection.conclusion.split('**').map((part, i) => {
+                if (i % 2 === 1) {
+                  return <strong key={i} className="font-bold text-saffron-700">{part}</strong>;
+                }
+                return part.split('*').map((subpart, j) => {
+                  if (j % 2 === 1) {
+                    return <em key={j} className="italic">{subpart}</em>;
+                  }
+                  return subpart;
+                });
+              })}
+            </p>
+          </div>
+        </div>
+
         {/* Values Cards */}
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           <Card className="p-8 text-center border-2 border-saffron-100 hover:border-saffron-300 transition-all hover:shadow-xl bg-gradient-to-br from-white to-saffron-50">
