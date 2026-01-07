@@ -21,7 +21,23 @@ Drawing inspiration from the Rishis and their teachings, and from the morals of 
 
 Our work is inspired by the age-old duty of service — Parmaarth (selfless service), Karuna (compassion), Dharma (duty) and Vidya Daan (donation of knowledge). We believe that true service to Dharma is incomplete without service to society.
 
-Sanatan philosophy has dignified Vidya (knowledge) meant to awaken the inherent infinite potential within each child, emphasizing internal learning alongside external skills. By providing a nurturing environment inspired by the gurukul tradition, we strive to empower the next generation with knowledge, discipline, and cultural pride.`
+Sanatan philosophy has dignified Vidya (knowledge) meant to awaken the inherent infinite potential within each child, emphasizing internal learning alongside external skills. By providing a nurturing environment inspired by the gurukul tradition, we strive to empower the next generation with knowledge, discipline, and cultural pride.`,
+  gurukulSection: {
+    title: 'Gurukul Parampara',
+    sanskritVerse: 'गुरुर्ब्रह्मा गुरुर्विष्णुः गुरुर्देवो महेश्वरः। गुरुः साक्षात् परं ब्रह्म तस्मै श्रीगुरवे नमः',
+    verseTransliteration: 'Gurur Brahmā gurur Viṣṇuḥ gurur devo Maheśvaraḥ | Guruḥ sākṣāt paraṃ Brahma tasmai śrī-gurave namaḥ',
+    verseTranslation: 'The Guru is Brahmā, the Guru is Viṣṇu, the Guru is Maheśvara; The Guru is verily the Supreme Brahman—salutations to that revered Guru.',
+    description: `We are rooted in the sacred Gurukul parampara—India's timeless ashram-based system of education—where students learn under the loving guidance of Gurus. This holistic approach nurtures body, mind, and soul, imparting academic knowledge alongside self-discipline, humility, moral values, and practical life skills through lived experience.
+
+Students live as part of a spiritual family, with essential needs like food, clothing and basic school supplies provided so they can fully focus on sadhana and learning.`,
+    activities: [
+      'Daily yoga',
+      'Meditation',
+      'Regular medical camps',
+      'Celebration of major festivals of Sanatan Dharma'
+    ],
+    conclusion: 'Through this journey, we aim to shape individuals of strong character, spiritual awareness, and moral integrity—self-reliant individuals who live by dharma and serve society with compassion and responsibility.'
+  }
 };
 
 export const missionContent = {
