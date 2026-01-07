@@ -46,6 +46,7 @@ const Hero = () => {
                 src={foundationInfo.logoSmall} 
                 alt="Sanatan Shakti Sangrah Logo" 
                 className="h-28 md:h-36 w-auto object-contain"
+                style={{ mixBlendMode: 'multiply', filter: 'contrast(1.2)' }}
               />
             </div>
             <div className="flex flex-col text-left">
