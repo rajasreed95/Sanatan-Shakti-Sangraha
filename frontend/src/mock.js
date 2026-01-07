@@ -28,7 +28,7 @@ Sanatan philosophy has dignified Vidya (knowledge) meant to awaken the inherent 
     verseTransliteration: 'Gurur Brahmā gurur Viṣṇuḥ gurur devo Maheśvaraḥ | Guruḥ sākṣāt paraṃ Brahma tasmai śrī-gurave namaḥ',
     verseSource: 'गुरुगीता',
     verseTranslation: 'The Guru is Brahmā, the Guru is Viṣṇu, the Guru is Maheśvara; The Guru is verily the Supreme Brahman - salutations to that revered Guru.',
-    introText: 'We are rooted in the sacred **Gurukul Parampara** - India\'s timeless ashram-based system of education - where students **learn and grow** under the loving guidance of Gurus. This holistic approach nurtures **body, mind, and soul**, imparting academic knowledge alongside **character-building**, **self-discipline**, humility, moral values, and practical life skills gained through lived experience.',
+    introText: 'We are rooted in the sacred **Gurukul Parampara** - India\'s timeless ashram-based system of education - where students learn and grow under the loving guidance of Gurus. This holistic approach nurtures **body, mind, and soul**, imparting academic knowledge alongside character-building, self-discipline, humility, moral values, and practical life skills gained through lived experience.',
     education: {
       title: 'Education in the Gurukul System',
       description: 'Education follows the traditional **Gurukul method of study**, integrating spiritual wisdom with modern knowledge. Students receive structured learning in:',
