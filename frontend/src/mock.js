@@ -36,7 +36,7 @@ Sanatan philosophy has dignified Vidya (knowledge) meant to awaken the inherent 
       description: 'Education follows the traditional **Gurukul method of study**, integrating spiritual wisdom with modern knowledge. Students receive structured learning in:',
       subjects: [
         'Sacred scriptures such as the **Bhagavad Gita** and the **Vedas**',
-        '**Mathematics and Science**, to develop logical thinking and scientific temper',
+        '**Mathematics and Science**, to develop logical thinking and scientific understanding',
         '**English**, to enable effective communication and engagement with the modern world'
       ],
       conclusion: 'This balanced curriculum ensures that students are spiritually grounded while being intellectually capable and practically prepared for life.'
