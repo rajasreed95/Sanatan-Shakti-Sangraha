@@ -19,11 +19,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo and Foundation Name */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <img 
               src={foundationInfo.logo} 
               alt="Sanatan Shakti Sangrah Logo" 
-              className="h-14 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
               style={{ mixBlendMode: 'multiply', filter: 'contrast(1.2)' }}
             />
             <div className="flex flex-col">
