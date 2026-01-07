@@ -89,6 +89,10 @@ const HowToHelp = () => {
           </p>
         </div>
       </div>
+
+      {/* Dialogs */}
+      <VolunteerDialog open={volunteerDialogOpen} onOpenChange={setVolunteerDialogOpen} />
+      <DonateDialog open={donateDialogOpen} onOpenChange={setDonateDialogOpen} />
     </section>
   );
 };
