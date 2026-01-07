@@ -61,6 +61,8 @@ const Mission = () => {
                 controls
                 className="w-full h-[350px] object-cover"
                 preload="metadata"
+                playsInline
+                controlsList="nodownload"
               >
                 Your browser does not support the video tag.
               </video>
