@@ -113,7 +113,7 @@ const Footer = () => {
         <div className="border-t border-saffron-700 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-saffron-200 text-center md:text-left">
-              © {currentYear} सनातन शक्ति संग्रह (Sanatan Shakti Sangraha). All rights reserved.
+              © {currentYear} सनातन शक्ति संग्रह (Sanatan Shakti Sangrah). All rights reserved.
             </p>
             <p className="flex items-center gap-2 text-saffron-200">
               Made with <Heart className="w-4 h-4 text-red-400 fill-current" /> for the children of Bharat
