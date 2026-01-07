@@ -42,13 +42,12 @@ const Vision = () => {
           <div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <video 
-                src={videos.vision} 
                 controls
                 className="w-full h-[450px] object-cover"
                 preload="metadata"
                 playsInline
-                controlsList="nodownload"
               >
+                <source src={videos.vision} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
