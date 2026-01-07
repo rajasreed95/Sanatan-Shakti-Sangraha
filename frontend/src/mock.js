@@ -124,7 +124,7 @@ export const contactInfo = {
   address: 'Rishikesh, Uttarakhand, India',
   email: 'sanatanshaktisangrah@gmail.com',
   phones: ['+91 9999279843', '+91 9873889503'],
-  fullAddress: 'Gali no. 09, Bees Bigha, Bapugram Veerbhadra, Rishikesh, Dehradun, Uttarakhand - 249202, India'
+  fullAddress: 'Gali no. 09, Bees Bigha, Bapugram, Veerbhadra, Rishikesh, Dehradun, Uttarakhand - 249202, India'
 };
 
 export const donationInfo = {
@@ -134,7 +134,7 @@ export const donationInfo = {
     ifscCode: 'HDFC0000003',
     accountType: 'Current'
   },
-  suppliesAddress: 'Gali no. 09, Bees Bigha, Bapugram Veerbhadra, Rishikesh, Dehradun, Uttarakhand - 249202, India',
+  suppliesAddress: 'Gali no. 09, Bees Bigha, Bapugram, Veerbhadra, Rishikesh, Dehradun, Uttarakhand - 249202, India',
   phones: ['+91 9999279843', '+91 9873889503']
 };
 
