@@ -43,10 +43,10 @@ Sanatan philosophy has dignified Vidya (knowledge) meant to awaken the inherent 
       title: 'Ashram Life & Daily Care',
       description: 'Students live as part of an extended spiritual family within the ashram. All essential needs are thoughtfully provided, including:',
       provisions: [
-        'Safe and disciplined **residential facilities**',
-        'Nutritious food and **clean drinking water**',
-        '**Clothing and basic daily necessities**',
-        '**Ration and essential supplies**, so students can focus fully on learning and sadhana'
+        'Safe and disciplined residential facilities',
+        'Nutritious food and clean drinking water',
+        'Clothing and basic daily necessities',
+        'Ration and essential supplies, so students can focus fully on learning and sadhana'
       ]
     },
     health: {
