@@ -82,6 +82,18 @@ async def get_status_checks():
     
     return status_checks
 
+@api_router.post("/volunteer", response_model=VolunteerSubmission)
+async def create_volunteer_submission(input: VolunteerSubmissionCreate):
+    volunteer_dict = input.dict()
+    volunteer_obj = VolunteerSubmission(**volunteer_dict)
+    _ = await db.volunteer_submissions.insert_one(volunteer_obj.dict())
+    return volunteer_obj
+
+@api_router.get("/volunteer", response_model=List[VolunteerSubmission])
+async def get_volunteer_submissions():
+    submissions = await db.volunteer_submissions.find().sort("timestamp", -1).to_list(1000)
+    return [VolunteerSubmission(**submission) for submission in submissions]
+
 # Include the router in the main app
 app.include_router(api_router)
 
