@@ -81,43 +81,105 @@ const DonateDialog = ({ open, onOpenChange }) => {
           ) : selectedOption === 'money' ? (
             <div className="space-y-6">
               <div className="bg-gradient-to-br from-saffron-50 to-amber-50 rounded-xl p-6 border-2 border-saffron-200">
-                <h3 className="text-lg font-bold text-saffron-800 mb-4">Donate via UPI</h3>
+                <h3 className="text-lg font-bold text-saffron-800 mb-4">Bank Account Details</h3>
                 <p className="text-gray-700 mb-4">
-                  You can donate using Google Pay or PhonePe by sending money to our UPI ID:
+                  You can donate by transferring money directly to our bank account:
                 </p>
                 
-                <div className="bg-white p-4 rounded-lg border border-saffron-300 flex items-center justify-between">
-                  <code className="text-lg font-mono text-saffron-700 font-semibold">
-                    {donationInfo.upiId}
-                  </code>
-                  <Button
-                    onClick={() => copyToClipboard(donationInfo.upiId)}
-                    variant="outline"
-                    size="sm"
-                    className="border-saffron-300 hover:bg-saffron-50"
-                  >
-                    {copiedUPI ? (
-                      <>
-                        <Check className="w-4 h-4 mr-2" />
-                        Copied!
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="w-4 h-4 mr-2" />
-                        Copy
-                      </>
-                    )}
-                  </Button>
+                <div className="space-y-4">
+                  {/* Account Holder */}
+                  <div className="bg-white p-4 rounded-lg border border-saffron-300">
+                    <p className="text-sm text-gray-600 mb-1">Account Holder Name</p>
+                    <div className="flex items-center justify-between">
+                      <p className="text-lg font-semibold text-saffron-700">{donationInfo.bankAccount.accountHolder}</p>
+                      <Button
+                        onClick={() => copyToClipboard(donationInfo.bankAccount.accountHolder, 'holder')}
+                        variant="outline"
+                        size="sm"
+                        className="border-saffron-300 hover:bg-saffron-50"
+                      >
+                        {copiedField === 'holder' ? (
+                          <>
+                            <Check className="w-4 h-4 mr-2" />
+                            Copied!
+                          </>
+                        ) : (
+                          <>
+                            <Copy className="w-4 h-4 mr-2" />
+                            Copy
+                          </>
+                        )}
+                      </Button>
+                    </div>
+                  </div>
+
+                  {/* Account Number */}
+                  <div className="bg-white p-4 rounded-lg border border-saffron-300">
+                    <p className="text-sm text-gray-600 mb-1">Account Number</p>
+                    <div className="flex items-center justify-between">
+                      <p className="text-lg font-mono font-semibold text-saffron-700">{donationInfo.bankAccount.accountNumber}</p>
+                      <Button
+                        onClick={() => copyToClipboard(donationInfo.bankAccount.accountNumber, 'account')}
+                        variant="outline"
+                        size="sm"
+                        className="border-saffron-300 hover:bg-saffron-50"
+                      >
+                        {copiedField === 'account' ? (
+                          <>
+                            <Check className="w-4 h-4 mr-2" />
+                            Copied!
+                          </>
+                        ) : (
+                          <>
+                            <Copy className="w-4 h-4 mr-2" />
+                            Copy
+                          </>
+                        )}
+                      </Button>
+                    </div>
+                  </div>
+
+                  {/* IFSC Code */}
+                  <div className="bg-white p-4 rounded-lg border border-saffron-300">
+                    <p className="text-sm text-gray-600 mb-1">IFSC Code</p>
+                    <div className="flex items-center justify-between">
+                      <p className="text-lg font-mono font-semibold text-saffron-700">{donationInfo.bankAccount.ifscCode}</p>
+                      <Button
+                        onClick={() => copyToClipboard(donationInfo.bankAccount.ifscCode, 'ifsc')}
+                        variant="outline"
+                        size="sm"
+                        className="border-saffron-300 hover:bg-saffron-50"
+                      >
+                        {copiedField === 'ifsc' ? (
+                          <>
+                            <Check className="w-4 h-4 mr-2" />
+                            Copied!
+                          </>
+                        ) : (
+                          <>
+                            <Copy className="w-4 h-4 mr-2" />
+                            Copy
+                          </>
+                        )}
+                      </Button>
+                    </div>
+                  </div>
+
+                  {/* Account Type */}
+                  <div className="bg-white p-4 rounded-lg border border-saffron-300">
+                    <p className="text-sm text-gray-600 mb-1">Type of Account</p>
+                    <p className="text-lg font-semibold text-saffron-700">{donationInfo.bankAccount.accountType}</p>
+                  </div>
                 </div>
 
                 <div className="mt-6 space-y-2 text-sm text-gray-600">
                   <p className="font-semibold text-gray-700">Steps to donate:</p>
                   <ol className="list-decimal list-inside space-y-1 ml-2">
-                    <li>Open Google Pay or PhonePe app</li>
-                    <li>Select "Send Money" or "UPI Transfer"</li>
-                    <li>Enter the UPI ID above or copy it</li>
+                    <li>Open your banking app or visit your bank</li>
+                    <li>Select "Transfer" or "NEFT/RTGS/IMPS"</li>
+                    <li>Enter the account details above</li>
                     <li>Enter the amount you wish to donate</li>
-                    <li>Complete the payment</li>
+                    <li>Complete the transfer</li>
                   </ol>
                 </div>
               </div>
