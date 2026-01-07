@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
+import { foundationInfo } from '../mock';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,12 +16,19 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-saffron-200 shadow-sm">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex flex-col">
-            <h1 className="text-2xl md:text-3xl font-bold text-saffron-700">सनातन शक्ति संग्रह</h1>
-            <p className="text-xs md:text-sm text-saffron-600 italic">तमसो मा ज्योतिर्गमय</p>
+          {/* Logo and Foundation Name */}
+          <div className="flex items-center gap-3">
+            <img 
+              src={foundationInfo.logo} 
+              alt="Sanatan Shakti Sangrah Logo" 
+              className="h-14 w-auto object-contain"
+            />
+            <div className="flex flex-col">
+              <h1 className="text-xl md:text-2xl font-bold text-saffron-700">{foundationInfo.name}</h1>
+              <p className="text-xs md:text-sm text-saffron-600 italic">{foundationInfo.tagline}</p>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
