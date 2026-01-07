@@ -45,11 +45,7 @@ const Hero = () => {
               <img 
                 src={foundationInfo.logoSmall} 
                 alt="Sanatan Shakti Sangrah Logo" 
-                className="h-28 md:h-36 w-auto object-contain rounded-xl p-3"
-                style={{ 
-                  backgroundColor: '#fff7ed',
-                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)'
-                }}
+                className="h-28 md:h-36 w-auto object-contain"
               />
             </div>
             <div className="flex flex-col text-left">
