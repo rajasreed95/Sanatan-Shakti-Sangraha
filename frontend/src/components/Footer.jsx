@@ -82,11 +82,28 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-saffron-300 mt-1 flex-shrink-0" />
-                <span className="text-saffron-100">{contactInfo.email}<br/><span className="text-sm text-saffron-200">(Coming soon)</span></span>
+                <a href={`mailto:${contactInfo.email}`} className="text-saffron-100 hover:text-white transition-colors">
+                  {contactInfo.email}
+                </a>
               </li>
+              {contactInfo.phones.map((phone, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <Phone className="w-5 h-5 text-saffron-300 mt-1 flex-shrink-0" />
+                  <a href={`tel:${phone}`} className="text-saffron-100 hover:text-white transition-colors">
+                    {phone}
+                  </a>
+                </li>
+              ))}
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-saffron-300 mt-1 flex-shrink-0" />
-                <span className="text-saffron-100">{contactInfo.phone}<br/><span className="text-sm text-saffron-200">(Coming soon)</span></span>
+                <Instagram className="w-5 h-5 text-saffron-300 mt-1 flex-shrink-0" />
+                <a 
+                  href={foundationInfo.instagram} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-saffron-100 hover:text-white transition-colors"
+                >
+                  Visit our Instagram
+                </a>
               </li>
             </ul>
           </div>
