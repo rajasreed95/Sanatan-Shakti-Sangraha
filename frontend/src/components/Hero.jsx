@@ -43,7 +43,7 @@ const Hero = () => {
           <div className="mb-8 animate-fade-in-delay flex items-center justify-center gap-12 max-w-6xl mx-auto">
             <div className="flex-shrink-0">
               <img 
-                src={foundationInfo.logo} 
+                src={foundationInfo.logoSmall} 
                 alt="Sanatan Shakti Sangrah Logo" 
                 className="h-28 md:h-36 w-auto object-contain rounded-xl p-3"
                 style={{ 
