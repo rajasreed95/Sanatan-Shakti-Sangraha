@@ -121,6 +121,13 @@ export const contactInfo = {
   title: 'Contact Us',
   address: 'Rishikesh, Uttarakhand, India',
   email: 'sanatanshaktisangrah@gmail.com',
+  phones: ['+91 9999279843', '+91 9873889503'],
+  fullAddress: 'Sanatan Shakti Sangrah - Gali no 09 bees bigha bapugram veerbhadra rishikesh dehradun uttrakhand 249202'
+};
+
+export const donationInfo = {
+  upiId: 'sanatanshaktisangrah@okhdfc',
+  suppliesAddress: 'Sanatan Shakti Sangrah - Gali no 09 bees bigha bapugram veerbhadra rishikesh dehradun uttrakhand 249202',
   phones: ['+91 9999279843', '+91 9873889503']
 };
 
