@@ -98,28 +98,48 @@ async def get_volunteer_submissions():
 
 @api_router.get("/proxy-video")
 @api_router.options("/proxy-video")
-async def proxy_video(url: str = ""):
+async def proxy_video(request: Request, url: str = ""):
     """
-    Proxy video requests to add CORS headers
+    Proxy video requests with range support for streaming
     """
     if not url:
         return {"error": "URL parameter required"}
-        
+    
     try:
-        async with httpx.AsyncClient(timeout=30.0) as client:
-            response = await client.get(url)
+        headers = {}
+        
+        # Handle range requests for video seeking
+        range_header = request.headers.get("range")
+        if range_header:
+            headers["Range"] = range_header
+        
+        async with httpx.AsyncClient(timeout=60.0) as client:
+            response = await client.get(url, headers=headers)
             
-            return StreamingResponse(
-                iter([response.content]),
-                media_type="video/mp4",
-                headers={
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Methods": "GET, OPTIONS",
-                    "Access-Control-Allow-Headers": "*",
-                    "Cache-Control": "public, max-age=31536000",
-                    "Accept-Ranges": "bytes"
-                }
+            # Prepare response headers
+            response_headers = {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, OPTIONS, HEAD",
+                "Access-Control-Allow-Headers": "*",
+                "Content-Type": "video/mp4",
+                "Accept-Ranges": "bytes",
+            }
+            
+            # Copy relevant headers from source
+            if "Content-Range" in response.headers:
+                response_headers["Content-Range"] = response.headers["Content-Range"]
+            if "Content-Length" in response.headers:
+                response_headers["Content-Length"] = response.headers["Content-Length"]
+            
+            status_code = response.status_code
+            
+            return Response(
+                content=response.content,
+                status_code=status_code,
+                headers=response_headers,
+                media_type="video/mp4"
             )
+            
     except Exception as e:
         logger.error(f"Error proxying video: {str(e)}")
         return {"error": str(e)}
