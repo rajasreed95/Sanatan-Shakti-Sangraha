@@ -47,10 +47,10 @@ const HowToHelp = () => {
               <p className="text-gray-700 mb-6 leading-relaxed text-center">
                 {howToHelp.donate.description}
               </p>
-              <Button 
+              <Button
                 onClick={handleDonate}
-                className="w-full bg-saffron-600 hover:bg-saffron-700 text-white py-6 text-lg flex items-center justify-center gap-2 group"
-              >
+                className="w-full bg-saffron-600 hover:bg-saffron-700 text-white py-6 text-lg flex items-center justify-center gap-2 group">
+
                 Donate Now
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -69,10 +69,10 @@ const HowToHelp = () => {
               <p className="text-gray-700 mb-6 leading-relaxed text-center">
                 {howToHelp.volunteer.description}
               </p>
-              <Button 
+              <Button
                 onClick={handleVolunteer}
-                className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg flex items-center justify-center gap-2 group"
-              >
+                className="w-full bg-amber-600 hover:bg-amber-700 text-white py-6 text-lg flex items-center justify-center gap-2 group">
+
                 Volunteer With Us
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -82,10 +82,10 @@ const HowToHelp = () => {
 
         {/* Additional Info */}
         <div className="mt-16 max-w-4xl mx-auto text-center">
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Whether through financial contribution or your time and skills, every form of support 
-            helps us bring the light of education to more children. Together, we can create a 
-            brighter future for the next generation.
+          <p className="!text-lg text-gray-600">Whether through financial contribution, supplies, or your time and skills, every form of support helps us bring the light of education to more children. Together, we can create a brighter future for the next generation.
+
+
+
           </p>
         </div>
       </div>
@@ -93,8 +93,8 @@ const HowToHelp = () => {
       {/* Dialogs */}
       <VolunteerDialog open={volunteerDialogOpen} onOpenChange={setVolunteerDialogOpen} />
       <DonateDialog open={donateDialogOpen} onOpenChange={setDonateDialogOpen} />
-    </section>
-  );
+    </section>);
+
 };
 
 export default HowToHelp;
