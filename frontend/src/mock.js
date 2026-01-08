@@ -142,13 +142,15 @@ export const images = {
   about: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/6kb1997c_about_photo.JPG',
   mission: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/u0sv153k_Mission_photo_1.JPG',
   volunteer: 'https://images.pexels.com/photos/5303547/pexels-photo-5303547.jpeg',
-  donate: 'https://images.pexels.com/photos/159632/school-children-happy-food-159632.jpeg'
+  donate: 'https://images.pexels.com/photos/159632/school-children-happy-food-159632.jpeg',
+  gurukul: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/dzqahvxz_Gurukul_1.jpg'
 };
 
 export const videos = {
   about: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/wep6b30w_About_1.MP4')}`,
   mission: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/ikc3z47g_Mission_2.MP4')}`,
-  vision: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/9it4qkpo_Vision_2.MP4')}`
+  vision: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/9it4qkpo_Vision_2.MP4')}`,
+  gurukul: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/c9ur93bu_Vision_1.MP4')}`
 };
 
 export const stats = [
