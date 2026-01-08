@@ -97,6 +97,7 @@ async def get_volunteer_submissions():
     return [VolunteerSubmission(**submission) for submission in submissions]
 
 @api_router.get("/proxy-video")
+@api_router.head("/proxy-video")
 @api_router.options("/proxy-video")
 async def proxy_video(request: Request, url: str = ""):
     """
