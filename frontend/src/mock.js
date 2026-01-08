@@ -146,9 +146,9 @@ export const images = {
 };
 
 export const videos = {
-  about: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/0g7ud6hq_About_1.MP4')}`,
-  mission: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/iv01d8c1_Mission_1.MP4')}`,
-  vision: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/19s11hwp_Vision_2.MP4')}`
+  about: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/wep6b30w_About_1.MP4')}`,
+  mission: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/6bmdzl0s_Mission_1.MP4')}`,
+  vision: `${process.env.REACT_APP_BACKEND_URL}/api/proxy-video?url=${encodeURIComponent('https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/9it4qkpo_Vision_2.MP4')}`
 };
 
 export const stats = [
