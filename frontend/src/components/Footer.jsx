@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Foundation Info */}
           <div>
             <h3 className="text-2xl font-bold mb-2">सनातन शक्ति संग्रह</h3>
-            <p className="text-saffron-200 italic mb-4">तमसो मा ज्योतिर्गमय</p>
+            <p className="!italic mb-4 text-saffron-200">|| तमसो मा ज्योतिर्गमय ||</p>
             <p className="text-saffron-100 leading-relaxed">
               Dedicated to uplifting underprivileged children through the transformative power of education.
             </p>
@@ -30,42 +30,42 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => scrollToSection('about')} 
-                  className="text-saffron-200 hover:text-white transition-colors"
-                >
+                <button
+                  onClick={() => scrollToSection('about')}
+                  className="text-saffron-200 hover:text-white transition-colors">
+
                   About Us
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('mission')} 
-                  className="text-saffron-200 hover:text-white transition-colors"
-                >
+                <button
+                  onClick={() => scrollToSection('mission')}
+                  className="text-saffron-200 hover:text-white transition-colors">
+
                   Our Mission
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('vision')} 
-                  className="text-saffron-200 hover:text-white transition-colors"
-                >
+                <button
+                  onClick={() => scrollToSection('vision')}
+                  className="text-saffron-200 hover:text-white transition-colors">
+
                   Our Vision
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('founders')} 
-                  className="text-saffron-200 hover:text-white transition-colors"
-                >
+                <button
+                  onClick={() => scrollToSection('founders')}
+                  className="text-saffron-200 hover:text-white transition-colors">
+
                   Founders' Message
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('help')} 
-                  className="text-saffron-200 hover:text-white transition-colors"
-                >
+                <button
+                  onClick={() => scrollToSection('help')}
+                  className="text-saffron-200 hover:text-white transition-colors">
+
                   Get Involved
                 </button>
               </li>
@@ -86,22 +86,22 @@ const Footer = () => {
                   {contactInfo.email}
                 </a>
               </li>
-              {contactInfo.phones.map((phone, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {contactInfo.phones.map((phone, index) =>
+              <li key={index} className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-saffron-300 mt-1 flex-shrink-0" />
                   <a href={`tel:${phone}`} className="text-saffron-100 hover:text-white transition-colors">
                     {phone}
                   </a>
                 </li>
-              ))}
+              )}
               <li className="flex items-start gap-3">
                 <Instagram className="w-5 h-5 text-saffron-300 mt-1 flex-shrink-0" />
-                <a 
-                  href={foundationInfo.instagram} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-saffron-100 hover:text-white transition-colors"
-                >
+                <a
+                  href={foundationInfo.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-saffron-100 hover:text-white transition-colors">
+
                   Visit our Instagram
                 </a>
               </li>
@@ -121,8 +121,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
