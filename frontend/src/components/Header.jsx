@@ -84,9 +84,9 @@ const Header = () => {
             <button onClick={() => scrollToSection('vision')} className="text-left text-gray-700 hover:text-saffron-600 transition-colors font-medium py-2">
               Vision
             </button>
-            <button onClick={() => scrollToSection('founders')} className="text-left text-gray-700 hover:text-saffron-600 transition-colors font-medium py-2">
-              Founders
-            </button>
+            <button onClick={() => scrollToSection('founders')} className="hover:text-saffron-600 transition-colors !font-medium !text-left py-2 text-gray-700">Founders' Message
+
+          </button>
             <button onClick={() => scrollToSection('help')} className="text-left text-gray-700 hover:text-saffron-600 transition-colors font-medium py-2">
               Get Involved
             </button>
