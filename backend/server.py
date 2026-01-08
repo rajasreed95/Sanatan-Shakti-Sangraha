@@ -97,23 +97,32 @@ async def get_volunteer_submissions():
     return [VolunteerSubmission(**submission) for submission in submissions]
 
 @api_router.get("/proxy-video")
-async def proxy_video(url: str):
+@api_router.options("/proxy-video")
+async def proxy_video(url: str = ""):
     """
     Proxy video requests to add CORS headers
     """
-    async with httpx.AsyncClient() as client:
-        response = await client.get(url)
+    if not url:
+        return {"error": "URL parameter required"}
         
-        return StreamingResponse(
-            iter([response.content]),
-            media_type="video/mp4",
-            headers={
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "GET, OPTIONS",
-                "Access-Control-Allow-Headers": "*",
-                "Cache-Control": "public, max-age=31536000"
-            }
-        )
+    try:
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            response = await client.get(url)
+            
+            return StreamingResponse(
+                iter([response.content]),
+                media_type="video/mp4",
+                headers={
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Methods": "GET, OPTIONS",
+                    "Access-Control-Allow-Headers": "*",
+                    "Cache-Control": "public, max-age=31536000",
+                    "Accept-Ranges": "bytes"
+                }
+            )
+    except Exception as e:
+        logger.error(f"Error proxying video: {str(e)}")
+        return {"error": str(e)}
 
 # Include the router in the main app
 app.include_router(api_router)
