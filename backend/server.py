@@ -96,6 +96,25 @@ async def get_volunteer_submissions():
     submissions = await db.volunteer_submissions.find().sort("timestamp", -1).to_list(1000)
     return [VolunteerSubmission(**submission) for submission in submissions]
 
+@api_router.get("/proxy-video")
+async def proxy_video(url: str):
+    """
+    Proxy video requests to add CORS headers
+    """
+    async with httpx.AsyncClient() as client:
+        response = await client.get(url)
+        
+        return StreamingResponse(
+            iter([response.content]),
+            media_type="video/mp4",
+            headers={
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, OPTIONS",
+                "Access-Control-Allow-Headers": "*",
+                "Cache-Control": "public, max-age=31536000"
+            }
+        )
+
 # Include the router in the main app
 app.include_router(api_router)
 
