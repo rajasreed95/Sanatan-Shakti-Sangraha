@@ -87,6 +87,32 @@ const About = () => {
             </p>
           </div>
 
+          {/* Gurukul Media Gallery */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Video */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <video 
+                controls
+                className="w-full h-[400px] object-cover"
+                preload="auto"
+                playsInline
+                crossOrigin="anonymous"
+              >
+                <source src={videos.gurukul} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            
+            {/* Photo */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={images.gurukul} 
+                alt="Gurukul activities" 
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
+          </div>
+
           {/* Education Section */}
           <div className="mb-12 bg-gradient-to-br from-saffron-50 to-amber-50 rounded-2xl p-8">
             <h4 className="text-2xl font-bold text-saffron-800 mb-4">
