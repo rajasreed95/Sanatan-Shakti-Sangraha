@@ -37,8 +37,8 @@ const Header = () => {
             <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-saffron-600 transition-colors font-medium">
               Home
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-saffron-600 transition-colors font-medium">
-              About
+            <button onClick={() => scrollToSection('about')} className="hover:text-saffron-600 transition-colors !font-medium text-gray-700">About Us
+
             </button>
             <button onClick={() => scrollToSection('mission')} className="text-gray-700 hover:text-saffron-600 transition-colors font-medium">
               Mission
@@ -46,8 +46,8 @@ const Header = () => {
             <button onClick={() => scrollToSection('vision')} className="text-gray-700 hover:text-saffron-600 transition-colors font-medium">
               Vision
             </button>
-            <button onClick={() => scrollToSection('founders')} className="text-gray-700 hover:text-saffron-600 transition-colors font-medium">
-              Founders
+            <button onClick={() => scrollToSection('founders')} className="hover:text-saffron-600 transition-colors !font-medium text-gray-700">Founders' Message
+
             </button>
             <button onClick={() => scrollToSection('help')} className="text-gray-700 hover:text-saffron-600 transition-colors font-medium">
               Get Involved
