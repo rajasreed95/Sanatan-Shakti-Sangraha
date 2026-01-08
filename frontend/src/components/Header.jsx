@@ -20,12 +20,12 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo and Foundation Name */}
           <div className="flex items-center">
-            <img 
-              src={foundationInfo.logo} 
-              alt="Sanatan Shakti Sangrah Logo" 
+            <img
+              src={foundationInfo.logo}
+              alt="Sanatan Shakti Sangrah Logo"
               className="h-16 md:h-20 w-auto object-contain -mr-1"
-              style={{ mixBlendMode: 'multiply', filter: 'contrast(1.2)' }}
-            />
+              style={{ mixBlendMode: 'multiply', filter: 'contrast(1.2)' }} />
+
             <div className="flex flex-col">
               <h1 className="text-xl md:text-2xl font-bold text-saffron-700">{foundationInfo.name}</h1>
               <p className="text-xs md:text-sm text-saffron-600 italic">{foundationInfo.tagline}</p>
@@ -52,10 +52,10 @@ const Header = () => {
             <button onClick={() => scrollToSection('help')} className="text-gray-700 hover:text-saffron-600 transition-colors font-medium">
               Get Involved
             </button>
-            <Button 
-              onClick={() => scrollToSection('help')} 
-              className="bg-saffron-600 hover:bg-saffron-700 text-white"
-            >
+            <Button
+              onClick={() => scrollToSection('help')}
+              className="bg-saffron-600 hover:bg-saffron-700 text-white">
+
               Donate Now
             </Button>
           </nav>
@@ -63,21 +63,21 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-saffron-700 p-2"
-          >
+            className="md:hidden text-saffron-700 p-2">
+
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 flex flex-col space-y-3">
+        {isMenuOpen &&
+        <nav className="md:hidden mt-4 pb-4 flex flex-col space-y-3">
             <button onClick={() => scrollToSection('home')} className="text-left text-gray-700 hover:text-saffron-600 transition-colors font-medium py-2">
               Home
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-left text-gray-700 hover:text-saffron-600 transition-colors font-medium py-2">
-              About
-            </button>
+            <button onClick={() => scrollToSection('about')} className="hover:text-saffron-600 transition-colors !font-medium !text-left py-2 text-gray-700">About Us
+
+          </button>
             <button onClick={() => scrollToSection('mission')} className="text-left text-gray-700 hover:text-saffron-600 transition-colors font-medium py-2">
               Mission
             </button>
@@ -90,17 +90,17 @@ const Header = () => {
             <button onClick={() => scrollToSection('help')} className="text-left text-gray-700 hover:text-saffron-600 transition-colors font-medium py-2">
               Get Involved
             </button>
-            <Button 
-              onClick={() => scrollToSection('help')} 
-              className="bg-saffron-600 hover:bg-saffron-700 text-white w-full"
-            >
+            <Button
+            onClick={() => scrollToSection('help')}
+            className="bg-saffron-600 hover:bg-saffron-700 text-white w-full">
+
               Donate Now
             </Button>
           </nav>
-        )}
+        }
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Header;
