@@ -72,7 +72,8 @@ const Mission = () => {
               <img 
                 src={images.mission} 
                 alt="Mission activities" 
-                className="w-full h-[350px] object-cover"
+                className="w-full h-[350px]"
+                style={{ objectFit: 'fill' }}
               />
             </div>
           </div>
