@@ -8,7 +8,7 @@ export const foundationInfo = {
   taglineTranslation: 'From darkness, lead me to light',
   taglineSource: 'Brhadāraṇyaka Upaniṣad 1.3.28',
   instagram: 'https://www.instagram.com/sanatanshaktisangrah?igsh=cWpwMnF0MnZldDln',
-  logo: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/bkforqvc_generated-image%20%281%29.png',
+  logo: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/ka4c695u_header_logo.jpeg',
   logoSmall: 'https://customer-assets.emergentagent.com/job_81f99e36-932f-413b-b9a9-ccfe111b4689/artifacts/wah29m14_logo_background_changed.png'
 };
 
