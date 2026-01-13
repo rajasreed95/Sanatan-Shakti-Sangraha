@@ -83,17 +83,6 @@ const AdminLogin = ({ onLogin }) => {
             Login
           </Button>
         </form>
-
-        <div className="mt-6 p-4 bg-saffron-50 rounded-lg border border-saffron-200">
-          <p className="text-sm text-gray-600 text-center">
-            <strong>Default Credentials:</strong><br/>
-            Username: admin<br/>
-            Password: sanatan@2026
-          </p>
-          <p className="text-xs text-gray-500 text-center mt-2">
-            (You can change the password in the code)
-          </p>
-        </div>
       </Card>
     </div>
   );
